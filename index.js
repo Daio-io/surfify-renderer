@@ -10,8 +10,22 @@ require('./api/conf/app.routes')(app);
 
 let server = http.createServer(app.callback());
 
-server.listen(settings.port, function() {
-    
-   console.log('Surfify Server started on port:', settings.port);
-    
-});
+function startServer() {
+
+  server.listen(settings.port, function() {
+
+    console.log('Surfify Server started on port:', settings.port);
+
+  });
+
+}
+
+if (require.main === module) {
+
+  startServer();
+
+} else {
+
+  module.exports = startServer();
+
+}

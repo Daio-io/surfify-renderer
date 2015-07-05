@@ -1,0 +1,24 @@
+{
+  "name": "surfify-renderer",
+  "version": "0.0.1",
+  "description": "component builder for surf reports",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "engines": {
+    "iojs": "2.3.x"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:Daveloper87/surfify-renderer.git"
+  },
+  "author": "Daveloper87",
+  "license": "ISC",
+  "dependencies": {
+    "koa": "^0.20.0",
+    "koa-router": "^4.3.0",
+    "mongoose": "^4.0.2",
+    "msw-client": "^1.2.0"
+  }
+}

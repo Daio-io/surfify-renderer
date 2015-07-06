@@ -14,6 +14,7 @@ const surfCard = hbs.compile(template);
  */
 var render = function(options) {
   
+  options.style = css;
   return surfCard(options)
 
 };
